@@ -62,28 +62,28 @@ A lightweight Web server in C++ for Linux, facilitating beginners to quickly pra
 Reminder: Not all the above parameters are mandatory parameters. Please apply according to personal needs
 
 - -p, custom port number
--       Default is 9006
+    - Default is 9006
 - -l, choose the log writing method, default is synchronous writing
--       0, synchronous writing
--       1, asynchronous writing
+    - 0, synchronous writing
+    - 1, asynchronous writing
 - -m, the combination of modes for listenfd and connfd, default is LT + LT
-0, means using LT + LT
-1, means using LT + ET
-2, means using ET + LT
-3, means using ET + ET
+    - 0, means using LT + LT
+    - 1, means using LT + ET
+    - 2, means using ET + LT
+    - 3, means using ET + ET
 - -o, graceful shutdown of connection, not used by default
-0, not used
-1, used
+    - 0, not used
+    - 1, used
 - -s, the number of database connections
-Default is 8
+    - Default is 8
 - -t, number of threads
-Default is 8
+    -  Default is 8
 - -c, close log, open by default
-0, open logging
-1, close logging
+    - 0, open logging
+    - 1, close logging
 - -a, choose reactor model, default is Proactor
-0, Proactor model
-1, Reactor model
+    - 0, Proactor model
+    - 1, Reactor model
 
 ### sample command
 
