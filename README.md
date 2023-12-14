@@ -1,5 +1,5 @@
 
-# TinyWebServer
+# A Light Web Server
 A lightweight Web server in C++ for Linux, facilitating beginners to quickly practice network programming and build their own server.
 
 - Uses a concurrency model with thread pool + non-blocking socket + epoll (both ET and LT implemented) + event handling (both Reactor and simulated Proactor implemented)
