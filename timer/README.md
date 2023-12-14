@@ -1,0 +1,6 @@
+# Timer Processing for Inactive Connections
+Inactive connections occupy valuable connection resources, significantly affecting the performance of the server. To address this issue, a server timer can be implemented to handle these inactive connections, thereby releasing the connection resources. The alarm function can be used to periodically trigger the SIGALRM signal, and the signal handler for this signal uses a pipe to notify the main loop to execute the scheduled tasks on the timer linked list.
+
+- Unified Event Source: By unifying signal events and I/O events into the same event loop for processing, event management is simplified, and the efficiency of event handling is improved.
+- Timer Based on an Ascending Order Linked List: An ascending order linked list is used to manage timers, allowing for the quick identification of the soonest due timing event and ensuring that scheduled tasks are executed on time.
+- Handling Inactive Connections: The timer is not only useful for managing scheduled tasks but also for detecting and closing inactive connections to maintain optimal server performance.
